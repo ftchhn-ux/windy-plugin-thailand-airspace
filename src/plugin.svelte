@@ -232,15 +232,8 @@
                 fillOpacity: 1
             }).addTo(layerFlightPath);
             
-            // Safely attempt to bind the tooltip to prevent the Leaflet-GL crash
-            try {
-                if (typeof marker.bindTooltip === 'function') {
-                    marker.bindTooltip(`WPT ${index + 1}`, { permanent: false, direction: 'top' });
-                }
-            } catch (error) {
-                // Silently catch the error so it doesn't break the plugin menu!
-                console.warn(`Tooltip skipped for WPT ${index + 1}: Not supported by Windy's map engine.`);
-            }
+            // Replace the whole try/catch tooltip block with this:
+            marker.bindPopup(`<div style="text-align:center; font-weight:bold;">WPT ${index + 1}</div>`);
         });
     }
 

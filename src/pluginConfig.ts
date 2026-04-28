@@ -5,7 +5,7 @@ const config: ExternalPluginConfig = {
     name: 'windy-plugin-thailand-airspace', 
     
     // 2. IMPORTANT: Keep this identical to the version in your package.json
-    version: '1.2.9', 
+    version: '1.3.0', 
     
     // 3. This looks great in the Windy sidebar
     icon: '✈️', 

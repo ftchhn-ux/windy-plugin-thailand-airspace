@@ -1,6 +1,6 @@
 {
     "name": "windy-plugin-thailand-airspace",
-    "version": "1.2.9",
+    "version": "1.3.0",
     "description": "Interactive Airspace mapping and control zones for Thailand, including GPX upload and custom flight path drawing.",
     "main": "dist/plugin.min.js",
     "type": "module",
